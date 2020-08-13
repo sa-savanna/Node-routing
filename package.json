@@ -1,0 +1,27 @@
+{
+  "name": "icecream",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "http-errors": "~1.6.3",
+    "marked": "^1.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.17",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "slugify": "^1.4.0"
+  },
+  "devDependencies": {}
+}
