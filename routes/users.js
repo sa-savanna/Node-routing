@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-const passport = require('passport')
 require('../passport-config')
 const User = require('../models/user'),
     bcrypt = require('bcrypt')

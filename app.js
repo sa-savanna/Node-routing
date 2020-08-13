@@ -8,8 +8,7 @@ const express = require('express'),
     methodOverride = require('method-override'),
     mongoose = require('mongoose'),
     postsRoutes = require('./routes/index'),
-    usersRouts = require('./routes/users'),
-    createError = require('http-errors')
+    usersRouts = require('./routes/users')
 let path = require('path')
 
 
