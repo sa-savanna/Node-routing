@@ -56,7 +56,7 @@ app.use('/users', usersRouts)
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     res.status(404)
-    res.render('errors/404')
+    res.render('error')
     // next(createError(404))
 })
 
