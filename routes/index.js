@@ -52,15 +52,15 @@ router.get('/secret', function (req, res) {
 
 
 // get data from DB called Icecream> ices
-router.get('/blog', (req, res) => {
-    Ice.find({}, (err, list) => {
-        if (err) {
-            console.log(err);
-        } else {
-            res.render('blog', { ices: list, title: 'IceCream Blog' })
-        }
-    })
-});
+// router.get('/blog', (req, res) => {
+//     Ice.find({}, (err, list) => {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             res.render('blog', { ices: list, title: 'IceCream Blog' })
+//         }
+//     })
+// });
 
 
 router.post('/blog/new', async (req, res) => {
