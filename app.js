@@ -11,10 +11,16 @@ const express = require('express'),
     usersRouts = require('./routes/users')
 let path = require('path')
 
+// npm start app.js
 
-mongoose.connect('mongodb://localhost/icecream', {
+require("dotenv").config({path: ".env"})
+
+
+mongoose.connect(process.env.DB_URL, {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
 })
+.then(()=> console.log("MongoDB connected"))
+.catch((err) => console.log(err))
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

@@ -1,5 +1,12 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 a {
@@ -9,25 +16,16 @@ a {
 .bg-1 {
   background-image: url(../images/pattern-3289978_1280.png);
   background-position: center;
-  background-repeat: repeat-x;
   background-size: cover;
-}
-
-.bg-2 {
-  background-image: url(../images/pattern-3289978_1280.png);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
 }
 
 .bg-color {
   background-color: #e44a7e;
   text-align: center;
-  width: 36%;
-  position: absolute;
-  top: 30%;
-  left: 34%;
   padding: 15px;
 }
 
@@ -38,20 +36,23 @@ div h1 {
 
 /*_______________________ nav-bar */
 
-
 .navbar .navbar-brand {
   color: #95a4ff;
 }
 
-/*_______________________ footer */
+/*______________________________________________________ footer */
+
+.jumbotron {
+  margin-bottom: 0;
+}
 
 .info {
   text-align: center;
   display: flex;
-  flex-direction: row;
-  width: 50%;
   color: grey;
   margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .info a {
@@ -59,31 +60,60 @@ div h1 {
   margin-right: 15px;
 }
 
-.card {
+/* ====================================== blog cards */
+
+.card-deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vw;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .card-deck {
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.card-deck .card {
   opacity: .9;
   border: none;
+  width: 100%;
+  margin: 0;
+}
+
+.card-deck img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-body {
+  padding: 20px;
+  background: white;
+  height: 100%;
   font-size: 1em;
   line-height: 22px;
 }
 
-/* _______________contact form */
+/* ____________________________________contact form */
 
 .bg-3 {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
   background-size: cover;
-  width: 100vw;
   height: 100vh;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 .contact-us {
   background: #f8f4e5;
-  padding: 50px 100px;
+  padding: 3% 8%;
   border: 2px solid black;
   box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
 }
