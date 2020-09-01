@@ -24,14 +24,14 @@ a {
   width: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 42em 1fr;
+  grid-template-columns: 1fr 35em 1fr;
   grid-template-rows: 1fr 24em 1fr;
 }
 
 .bg-color {
   background-color: #e44a7e;
   text-align: center;
-  padding: 10% 9%;
+  padding: 10% 0%;
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 2;
@@ -40,17 +40,17 @@ a {
 }
 
 .bg-color h1 {
-  font-size: 7.5vw;
+  font-size: 5.5vw;
 }
 
-.bg-color h4 {
-  font-size: 3.5vw;
+.bg-color h5 {
+  font-size: 2vw;
 }
 
 .bg-color a {
   color: white;
-  padding: 3% 10%;
-  font-size: 3vw;
+  padding: 3% 7%;
+  font-size: 2vw;
 }
 
 .bg-color .material-icons {
