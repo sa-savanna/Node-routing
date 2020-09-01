@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   max-width: 100%;
   height: 100%;
@@ -7,13 +8,19 @@ body {
 
 *, *::before, *::after {
   box-sizing: border-box;
+=======
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+>>>>>>> 3b499bd8c40c847dfdab4c1bb7762592f507f15d
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
 }
 
 .bg-1 {
+<<<<<<< HEAD
   background-image: url(../images/pattern-3289978_1280.png);
   background-position: center;
   background-size: cover;
@@ -27,19 +34,47 @@ a {
   background-color: #e44a7e;
   text-align: center;
   padding: 15px;
+=======
+    background-image: url(../images/pattern-3289978_1280.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.bg-2 {
+    display: flex;
+    padding: 50px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bg-color {
+    background-color: #e44a7e;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+>>>>>>> 3b499bd8c40c847dfdab4c1bb7762592f507f15d
 }
 
 div h1 {
-  color: white;
-  font-family: "Helvetica";
+    color: white;
+    font-family: "Helvetica";
 }
 
+
+<<<<<<< HEAD
+=======
 /*_______________________ nav-bar */
 
+>>>>>>> 3b499bd8c40c847dfdab4c1bb7762592f507f15d
 .navbar .navbar-brand {
-  color: #95a4ff;
+    color: #95a4ff;
 }
 
+<<<<<<< HEAD
 /*______________________________________________________ footer */
 
 .jumbotron {
@@ -53,13 +88,26 @@ div h1 {
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: center;
+=======
+
+/*_______________________ footer */
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    color: grey;
+    margin: 0 auto;
+>>>>>>> 3b499bd8c40c847dfdab4c1bb7762592f507f15d
 }
 
 .info a {
-  color: inherit;
-  margin-right: 15px;
+    color: inherit;
+    margin-right: 15px;
 }
 
+<<<<<<< HEAD
 /* ====================================== blog cards */
 
 .card-deck {
@@ -116,68 +164,100 @@ div h1 {
   padding: 3% 8%;
   border: 2px solid black;
   box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+=======
+.card {
+    opacity: .9;
+    border: none;
+}
+
+.card-body {
+    font-size: 1em;
+    line-height: 22px;
+}
+
+
+/* _______________contact form */
+
+.bg-3 {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.contact-us {
+    background: #f8f4e5;
+    padding: 50px 100px;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+>>>>>>> 3b499bd8c40c847dfdab4c1bb7762592f507f15d
 }
 
 .form-container input {
-  display: block;
-  width: 100%;
-  font-size: 14pt;
-  line-height: 28pt;
-  font-family: "Fjalla One";
-  margin-bottom: 28pt;
-  border: none;
-  border-bottom: 5px solid black;
-  background: #f8f4e5;
-  min-width: 250px;
-  padding-left: 5px;
-  outline: none;
-  color: black;
+    display: block;
+    width: 100%;
+    font-size: 14pt;
+    line-height: 28pt;
+    font-family: "Fjalla One";
+    margin-bottom: 28pt;
+    border: none;
+    border-bottom: 5px solid black;
+    background: #f8f4e5;
+    min-width: 250px;
+    padding-left: 5px;
+    outline: none;
+    color: black;
 }
 
 .form-container input:focus {
-  border-bottom: 5px solid #ffa580;
+    border-bottom: 5px solid #ffa580;
 }
 
 .auth {
-  /* display: block; */
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #ffa580;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
-  color: inherit;
-  border-radius: 0;
+    /* display: block; */
+    margin: 0 auto;
+    line-height: 28pt;
+    padding: 0 20px;
+    background: #ffa580;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+    color: inherit;
+    border-radius: 0;
 }
 
 .auth:hover {
-  background: black;
-  color: white;
-  border: 1px solid black;
-  text-decoration: none;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    text-decoration: none;
 }
 
 ::selection {
-  background: #ffc8ff;
+    background: #ffc8ff;
 }
 
-.form-container input:-webkit-autofill, .form-container input:-webkit-autofill:hover, .form-container input:-webkit-autofill:focus {
-  border-bottom: 5px solid #95a4ff;
-  transition: background-color 5000s ease-in-out 0s;
+.form-container input:-webkit-autofill,
+.form-container input:-webkit-autofill:hover,
+.form-container input:-webkit-autofill:focus {
+    border-bottom: 5px solid #95a4ff;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 #show {
-  color: #90478f;
+    color: #90478f;
 }
 
 #show p {
-  font-size: 20px;
-  line-height: 25px;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 #delete {
-  display: inline;
+    display: inline;
 }
