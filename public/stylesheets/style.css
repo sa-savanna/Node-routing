@@ -11,10 +11,6 @@ body {
   padding: 0;
 }
 
-a {
-  color: #00B7FF;
-}
-
 .bg-1 {
   background-image: url(../images/pattern-3289978_1280.png);
   background-position: center;
@@ -50,29 +46,65 @@ a {
 .bg-color a {
   color: white;
   padding: 3% 7%;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .bg-color .material-icons {
   display: block;
-  font-size: 3vw;
+  font-size: 1.5vw;
 }
 
 @media (max-width: 768px) {
   .bg-1 {
     grid-template-columns: 1fr 29em 1fr;
   }
+  .bg-color h1 {
+    font-size: 4em;
+  }
+  .bg-color h5 {
+    font-size: 1.5em;
+  }
+  .bg-color a {
+    font-size: 1em;
+  }
+  .bg-color .material-icons {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 576px) {
   .bg-1 {
-    grid-template-columns: 1fr 22em 1fr;
+    grid-template-columns: 1fr 25em 1fr;
+  }
+  .bg-color h1 {
+    font-size: 4em;
+  }
+  .bg-color h5 {
+    font-size: 1.5em;
+  }
+  .bg-color a {
+    font-size: 1em;
+  }
+  .bg-color .material-icons {
+    font-size: 1em;
   }
 }
 
 @media (max-width: 375px) {
   .bg-1 {
     grid-template-columns: 1fr 19em 1fr;
+  }
+  .bg-color h1 {
+    font-size: 3.5em;
+  }
+  .bg-color h5 {
+    font-size: 2em;
+  }
+  .bg-color a {
+    font-size: 1.5em;
+  }
+  .bg-color .material-icons {
+    font-size: 1.5em;
   }
 }
 
