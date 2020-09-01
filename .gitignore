@@ -6,4 +6,3 @@ package-lock.json
 test/*.log
 *.log
 *.gz
-.env
