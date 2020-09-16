@@ -1,26 +1,30 @@
-<% include partials/header %>
-<% include partials/nav %>
+<div class="container-fluid">
+    <% include partials/header %>
+    <% include partials/nav %>
 
 
-<div class="bg-3">
-    <div class="contact-us">
-        <form action="/blog/<%= ices._id %>?_method=PUT" method="POST" class="form-container" enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="text" name="header" id="header" class="form-control" value="<%= ices.header %>">
-            </div>
-            <div class="form-group">
-                <input type="text" name="description" id="description" class="form-control" value="<%= ices.description %>"
-                    placeholder="Description">
-            </div>
-            <div class="form-group">
-                <input type="text" name="image" id="image" class="form-control" placeholder="Image link" value="<%= ices.image %>"> 
-                <p class="ml-auto">or</p>
-                <input id="avatar" type="file" name="avatar"/>
-            </div>
-            <button class="auth" type="submit">EDIT</button>
-        </form>
+    <div class="bg-3">
+        <div class="contact-us">
+            <form action="/blog/<%= ices._id %>?_method=PUT" method="POST" class="form-container"
+                enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" name="header" id="header" class="form-control" value="<%= ices.header %>">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="description" id="description" class="form-control"
+                        value="<%= ices.description %>" placeholder="Description">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="image" id="image" class="form-control" placeholder="Image link"
+                        value="<%= ices.image %>">
+                    <p class="ml-auto">or</p>
+                    <input id="avatar" type="file" name="avatar" />
+                </div>
+                <button class="auth" type="submit">EDIT</button>
+            </form>
 
+        </div>
     </div>
-</div>
 
-<% include partials/footer %>
+    <% include partials/footer %>
+</div>

@@ -11,111 +11,38 @@ body {
   padding: 0;
 }
 
+.container-fluid {
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
 .bg-1 {
   background-image: url(../images/pattern-3289978_1280.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   width: 100%;
   display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 35em 1fr;
-  grid-template-rows: 1fr 24em 1fr;
+  place-items: center;
 }
 
 .bg-color {
   background-color: #e44a7e;
   text-align: center;
-  padding: 10% 0%;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 2;
+  padding: 3%;
   color: white;
-}
-
-.bg-color h1 {
-  font-size: 5.5vw;
-}
-
-.bg-color h5 {
-  font-size: 2vw;
 }
 
 .bg-color a {
   color: white;
   padding: 3% 7%;
-  font-size: 1.5vw;
 }
 
 .bg-color .material-icons {
   display: block;
-  font-size: 1.5vw;
-}
-
-@media (max-width: 768px) {
-  .bg-1 {
-    grid-template-columns: 1fr 29em 1fr;
-  }
-  .bg-color h1 {
-    font-size: 4em;
-  }
-  .bg-color h5 {
-    font-size: 1.5em;
-  }
-  .bg-color a {
-    font-size: 1em;
-  }
-  .bg-color .material-icons {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 576px) {
-  .bg-1 {
-    grid-template-columns: 1fr 25em 1fr;
-  }
-  .bg-color h1 {
-    font-size: 4em;
-  }
-  .bg-color h5 {
-    font-size: 1.5em;
-  }
-  .bg-color a {
-    font-size: 1em;
-  }
-  .bg-color .material-icons {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 375px) {
-  .bg-1 {
-    grid-template-columns: 1fr 19em 1fr;
-  }
-  .bg-color h1 {
-    font-size: 3.5em;
-  }
-  .bg-color h5 {
-    font-size: 2em;
-  }
-  .bg-color a {
-    font-size: 1.5em;
-  }
-  .bg-color .material-icons {
-    font-size: 1.5em;
-  }
-}
-
-.bg-2 {
-  background-image: url(../images/pattern-3289978_1280.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
 }
 
 div h1 {
@@ -133,6 +60,7 @@ div h1 {
 
 .jumbotron {
   margin-bottom: 0;
+  padding: 2rem 2rem;
 }
 
 .info {
@@ -151,12 +79,20 @@ div h1 {
 
 /* ====================================== blog cards */
 
+.bg-2 {
+  background-image: url(../images/pattern-3289978_1280.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .card-deck {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2vw;
   width: 90%;
-  margin: 0 auto;
+  margin: 2% auto;
 }
 
 @media (max-width: 576px) {
@@ -188,16 +124,15 @@ div h1 {
   line-height: 22px;
 }
 
-/* ____________________________________contact form */
+/* ____________________________________add recipe form */
 
 .bg-3 {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  padding: 4% 0;
+  grid-template-columns: 15% 1fr 15%;
 }
 
 .contact-us {
@@ -205,6 +140,7 @@ div h1 {
   padding: 3% 8%;
   border: 2px solid black;
   box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+  grid-column: 2/3;
 }
 
 .form-container input {
@@ -217,7 +153,6 @@ div h1 {
   border: none;
   border-bottom: 5px solid black;
   background: #f8f4e5;
-  min-width: 250px;
   padding-left: 5px;
   outline: none;
   color: black;
