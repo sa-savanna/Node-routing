@@ -77,7 +77,7 @@ div h1 {
   margin-right: 15px;
 }
 
-/* ====================================== blog cards */
+/* ================================================ blog cards */
 
 .bg-2 {
   background-image: url(../images/pattern-3289978_1280.png);
@@ -99,7 +99,6 @@ div h1 {
   .card-deck {
     grid-template-columns: 1fr;
     width: 70%;
-    margin: 0 auto;
   }
 }
 
