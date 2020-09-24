@@ -6,5 +6,5 @@ package-lock.json
 test/*.log
 *.log
 *.gz
-.env
+
 //before deployment to heroku - delete .env from gitIgnore
