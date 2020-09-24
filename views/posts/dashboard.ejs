@@ -1,15 +1,12 @@
-<% include partials/header %>
-<% include partials/nav %>
+<div class="container-fluid">
+    <% include ../partials/header %>
+    <% include ../partials/nav %>
+    <div class="p-5">
+        <h2>Dashboard</h2>
+        <p>Welcome <%= user.name %> </p>
+        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+    </div>
 
+    <% include ../partials/footer %>
 
-<h1>Dashboard</h1>
-<ul>
-    <li>ID: <%= user._id%></li>
-    <li>Name: <%= user.name%></li>
-</ul>
-
-
-    <% }) %>
-
-
-<% include partials/footer %>
+</div>

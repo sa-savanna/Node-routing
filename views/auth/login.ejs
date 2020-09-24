@@ -5,23 +5,15 @@
 
     <div class="bg-3">
         <div class="contact-us">
-            <form action="/login" method="POST" enctype="text/plain" class="form-container"
-                enctype="multipart/form-data">
-                <div class="form-group">
-                    <input type="name" name="name" id="name" class="form-control" placeholder="Nick name" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" id="password" class="form-control"
-                        placeholder="Your password" required>
-                </div>
-                <button type="submit" class="auth">LOG IN</button>
+            <% include msg %>
+            <form action="/users/login" method="POST" class="form-container">
+                <input type="name" name="name" id="name" class="form-control" placeholder="Nick-name" required>
+                <!-- <input type="email" name="email" id="email" class="form-control" placeholder="Email" required> -->
+                <input type="password" name="password" id="password" class="form-control" placeholder="Your password"
+                    required>
+                <button type="submit" class="btn auth mb-2">LOG IN</button>
             </form>
-            <% if(messages.error) {%>
-            <div class="alert alert-danger" role="alert" style="margin-top: 20px;">
-                <%=  messages.error %>
-            </div>
-            <%}%>
+        </div>
     </div>
-
     <% include ../partials/footer %>
 </div>

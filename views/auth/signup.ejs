@@ -5,20 +5,23 @@
 
   <div class="bg-3">
     <div class="contact-us">
+
       <form action="/users/signup" method="POST" class="form-container">
         <div class="form-group">
-          <input type="name" name="name" id="name" class="form-control" placeholder="Nick name" required>
+          <input type="name" name="name" id="name" class="form-control" placeholder="Nick-name"
+            value="<%= typeof name != 'undefined' ? name : '' %>" required>
         </div>
         <div class="form-group">
-          <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>" required>
         </div>
         <div class="form-group">
-          <input type="password" name="password" id="password" class="form-control" placeholder="Your password"
-            required>
+          <input type="password" name="password" id="password" class="form-control" placeholder="Create password"
+            value="<%= typeof password != 'undefined' ? password : '' %>" required>
         </div>
-        <button type="submit" class="auth">SIGN UP</button>
+        <button type="submit" class="btn auth my-2">SIGN UP</button>
         <span class="mx-1"> or</span>
-        <a href="/login" class="btn btn-info auth mt-1">LOG IN</a>
+        <a href="/users/login" class="btn auth my-2">LOG IN</a>
       </form>
 
     </div>

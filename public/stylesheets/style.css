@@ -98,7 +98,7 @@ div h1 {
 @media (max-width: 576px) {
   .card-deck {
     grid-template-columns: 1fr;
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -148,7 +148,7 @@ div h1 {
   font-size: 14pt;
   line-height: 28pt;
   font-family: "Fjalla One";
-  margin-bottom: 28pt;
+  margin-bottom: 10%;
   border: none;
   border-bottom: 5px solid black;
   background: #f8f4e5;
@@ -161,8 +161,20 @@ div h1 {
   border-bottom: 5px solid #ffa580;
 }
 
+.form-container a:hover {
+  color: inherit;
+  background-color: #ffa580;
+}
+
+.form-container a:active {
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+  outline: none;
+}
+
 .auth {
-  /* display: block; */
+  position: relative;
   margin: 0 auto;
   line-height: 28pt;
   padding: 0 20px;
@@ -174,13 +186,22 @@ div h1 {
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
   color: inherit;
   border-radius: 0;
+  transition: unset;
 }
 
 .auth:hover {
-  background: black;
-  color: white;
   border: 1px solid black;
   text-decoration: none;
+  box-shadow: 2px 2px 0px #95a4ff, 2px 2px 0px 1px black;
+  top: 2px;
+  left: 2px;
+}
+
+.auth:active {
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+  outline: none;
 }
 
 ::selection {

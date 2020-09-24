@@ -1,8 +1,7 @@
-function checkNotAuth (req, res, next){
-    if(req.isAuthenticated()){
-        return res.redirect('/login')
+module.exports = function checkNotAuth(req, res, next) {
+    if (!req.isAuthenticated()) {
+        next()
     }
-    next()
+    return res.redirect('/dashboard')
 }
 
-module.exports = checkNotAuth;

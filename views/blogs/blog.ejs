@@ -1,6 +1,6 @@
 <div class="container-fluid">
-    <% include partials/header %>
-    <% include partials/nav %>
+    <% include ../partials/header %>
+    <% include ../partials/nav %>
 
 
     <div class="bg-2">
@@ -8,10 +8,10 @@
             <% ices.forEach(ice => {%>
             <div class="card">
                 <div class="row no-gutters">
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-4">
                         <img src="<%= ice.image %>" class="card-img" alt="...">
                     </div>
-                    <div class="col-md-8 col-lg-8">
+                    <div class="col-8">
                         <div class="card-body">
                             <h5 class="card-title"><%= ice.header %></h5>
                             <p class="card-text"><%= ice.description %></p>
@@ -26,5 +26,5 @@
         </div>
     </div>
 
-    <% include partials/footer %>
+    <% include ../partials/footer %>
 </div>
